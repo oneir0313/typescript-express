@@ -25,7 +25,7 @@ ORM
 
 實體 Entity
 ---
-Entity的概念就好比把資料模型比作物件，而非一些屬性的集合體。關於更多Entity的觀念留到Part2之後再詳細補充。這裡建立一個 User Entity 要用寫類別的方式並搭配TypeORM提供的修飾符(decorator)，這些修飾符像是Entity, Colum 和 PrimaryGeneratedColumn。沒有Entity加註不會被資料庫建立成資料表，沒有Column修飾符的屬性也不會加進資料表的欄位中。
+Entity的概念就好比把資料模型比作物件，而非一些屬性的集合體。這裡建立一個 User Entity 要用寫類別的方式並搭配TypeORM提供的修飾符(decorator)，這些修飾符像是Entity, Colum 和 PrimaryGeneratedColumn。沒有Entity加註不會被資料庫建立成資料表，沒有Column修飾符的屬性也不會加進資料表的欄位中。
 
 ```
 import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
