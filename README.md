@@ -13,6 +13,8 @@ Typescript Express
     - typescript支援大部分的ES6與之後版本的語法，例如 let, const、箭頭函式(Arrow Functions)等
     - 此外，typescript也能在config檔中選擇其他ES版本進行編譯
 
+#### [TypeScript 新手指南 - GitBook](https://willh.gitbook.io/typescript-tutorial/)
+
 ORM
 ---
 全名是Object-Relational Mapping，它讓操作資料庫就如同操作物件一樣，不需要撰寫SQL，使用ORM提供的method就可以達成與SQL一樣的資料庫操作；此外，ORM亦支援不同的關聯式資料庫，也就是說同一個method可以用在不同的資料庫上，達到的效果是一樣的!
