@@ -16,7 +16,6 @@ module.exports = {
         '@typescript-eslint/interface-name-prefix': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
-        'no-console': 'error',
         "@typescript-eslint/no-unused-vars": ["warn", { "args": "after-used" }],
         "@typescript-eslint/no-use-before-define":"off"
     },
