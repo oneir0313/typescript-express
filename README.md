@@ -106,7 +106,7 @@ Call Restful API
 ![](https://i.imgur.com/wcDioC2.png)
 
 2. 確認DB資料是否建立
-![](https://i.imgur.com/Z7acCR0.png)
+![](https://i.imgur.com/KUJBoru.png)
 
 3. Call Put user 
 ![](https://i.imgur.com/TqUpfDs.png)
