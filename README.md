@@ -90,7 +90,11 @@ typescript-express/
 
 #### Start Server
 
-    yarn install # 安裝node_modules 安裝yarn npm install yarn -g
+    yarn install # 安裝node_modules
+
+> 如果沒有yarn 可以安裝`npm install yarn -g`
+> 或直接`npm install`
+
     npm build    # 編譯TS files
     npm start    # 啟動Web server
     
