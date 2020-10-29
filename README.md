@@ -86,3 +86,8 @@ Try it
 2. 修改update api如果不帶email可以只改name
 3. 加入validator假設create user api, password長度小於6則回傳400 Bad Request
 4. 建立一個新的CRUD restful api
+
+
+----
+
+## reference: [Typescript express 打造Twitter專案](https://www.coderbridge.com/series/3d1e0eeebd654a88a16cfb13d8536bd9/posts/2a07b3d6ddab4f94a0cb772ae0bda95e)
