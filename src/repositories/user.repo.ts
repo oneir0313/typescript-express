@@ -1,28 +1,28 @@
-import { User } from "../entities/user.entity";
-import { getRepository } from "typeorm";
+import { User } from '../entities/user.entity';
+import { getRepository } from 'typeorm';
 
 export function getUsers() {
-  return getRepository(User).find();
+    return getRepository(User).find();
 }
 
 export async function createUser(data: User) {
-  let newUser = getRepository(User).create(data);
-  return await getRepository(User).save(newUser)
+    let newUser = getRepository(User).create(data);
+    return await getRepository(User).save(newUser);
 }
 
 export function getUser(id: string) {
-  return getRepository(User).findOne(id);
+    return getRepository(User).findOne(id);
 }
 
 export async function updateUser(id: string, data: User) {
-  let modifyUser = new User();
-  modifyUser.name = data.name;
-  modifyUser.email = data.email;
+    let modifyUser = new User();
+    modifyUser.name = data.name;
+    modifyUser.email = data.email;
 
-  await getRepository(User).update(id, modifyUser);
-  return await getRepository(User).findOne(id);
+    await getRepository(User).update(id, modifyUser);
+    return await getRepository(User).findOne(id);
 }
 
 export function deleteUser(id: string) {
-  return getRepository(User).delete(id);
+    return getRepository(User).delete(id);
 }
