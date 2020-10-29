@@ -11,7 +11,7 @@ const config: ConnectionOptions = {
     __dirname + '/../entities/*.{ts,js}',
   ],
   synchronize: true,
-  logging: false
+  logging: true
 };
 
 export default config;
