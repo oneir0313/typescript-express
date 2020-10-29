@@ -76,7 +76,8 @@ typescript-express/
 #### DB setting
 建立好資料庫及資料表確認`.env`的設定 
 範例是用192.168.204.138 VM開的DB
-在裡面建立database及table 以下是script
+在裡面建立database及table 
+> 建測試資料庫跟資料表的script
     
     CREATE DATABASE `test`;
     CREATE TABLE `user` (
