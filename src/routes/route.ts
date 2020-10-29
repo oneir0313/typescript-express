@@ -5,11 +5,11 @@ abstract class Route {
     protected router = Router();
     protected abstract setRoutes(): void;
 
-    public getPrefix() {
+    public getPrefix(): string {
         return this.path;
     }
 
-    public getRouter() {
+    public getRouter(): Router {
         return this.router;
     }
 }

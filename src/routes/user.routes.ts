@@ -1,4 +1,4 @@
-import { Application as ExpressApplication, Request, Response, Router } from 'express';
+import { Request, Response } from 'express';
 import Route from './route';
 import UserController from '../controllers/user.controller';
 
@@ -10,7 +10,7 @@ class UserRoutes extends Route {
         this.setRoutes();
     }
 
-    protected setRoutes() {
+    protected setRoutes(): void {
         this.router.get('/test', (req: Request, res: Response) => {
             res.status(200).send('you called user path test!');
         });
