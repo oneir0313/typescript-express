@@ -1,6 +1,6 @@
 {
   "name": "typescript-express",
-  "version": "1.0.0",
+  "version": "v1.22.10",
   "description": "",
   "main": "index.js",
   "scripts": {
