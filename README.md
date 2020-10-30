@@ -123,6 +123,9 @@ Try it
 3. 加入validator假設create user api, password長度小於6則回傳400 Bad Request
 4. 建立一個新的CRUD restful api
 
+> 進階題目
+* 新增Login View & Login API 並用JWT寫成middleware做認證  
+
 
 ----
 
