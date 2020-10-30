@@ -44,7 +44,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --check --pattern \"(src|test)/**/*.ts\" && eslint \"{src,apps,libs,test}/**/*.ts\"",
+      "pre-commit": "pretty-quick --check --pattern \"(src|test)/**/*.ts\" && eslint \"{src,test}/**/*.ts\"",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
