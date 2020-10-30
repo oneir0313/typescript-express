@@ -1,9 +1,13 @@
 import { Router } from 'express';
 
 abstract class Route {
-    private path = '/api';
+    private path: string;
     protected router = Router();
     protected abstract setRoutes(): void;
+
+    constructor(path = '/api') {
+        this.path  = path;
+    }
 
     public getPrefix(): string {
         return this.path;

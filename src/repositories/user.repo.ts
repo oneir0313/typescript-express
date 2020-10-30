@@ -26,3 +26,7 @@ export async function updateUser(id: string, data: User): Promise<User> {
 export function deleteUser(id: string): Promise<DeleteResult> {
     return getRepository(User).delete(id);
 }
+
+export function getUserInfo(name: string): Promise<User> {
+    return getRepository(User).findOne(name);
+}

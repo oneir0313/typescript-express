@@ -7,6 +7,7 @@
     "build": "tsc",
     "start-dev": "ts-node -r dotenv/config ./src/server.ts",
     "start": "node -r dotenv/config ./dist/server.js",
+    "debug": "node --inspect -r dotenv/config ./dist/server.js",
     "start-prod": "npm run build && npm run start",
     "format": "prettier --write \"src/**/*.ts\""
   },
@@ -16,6 +17,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
     "reflect-metadata": "^0.1.13",
