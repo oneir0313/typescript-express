@@ -1,4 +1,4 @@
-Typescript Express
+TypeScript Express
 ==========
 這裡提到 TypeScript 是 JavaScript 的型別超集合，也就是說 Typescript 提供了 JS 各種型別定義的設計，算是種原生JS的擴充且最後還能把它編譯成原生JS
 
@@ -12,6 +12,9 @@ Typescript Express
 - 期望有包含ES6與之後的標準，對原生JS的開發者來說"語法糖"不能少
     - typescript支援大部分的ES6與之後版本的語法，例如 let, const、箭頭函式(Arrow Functions)等
     - 此外，typescript也能在config檔中選擇其他ES版本進行編譯
+
+安裝TypeScirpt
+```npm install -g typescript```
 
 #### [TypeScript 新手指南 - GitBook](https://willh.gitbook.io/typescript-tutorial/)
 
