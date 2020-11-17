@@ -16,7 +16,7 @@ class UserRoutes extends Route {
         });
 
         this.router.route('/user').get(this.userController.getAll).post(this.userController.createOne);
-
+        this.router.route('/getUseAge').get(this.userController.getAgeAggregation);
         this.router.route('/user/:id').get(this.userController.getOne).put(this.userController.updateOne).delete(this.userController.deleteOne);
     }
 }

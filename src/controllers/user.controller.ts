@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
-import { getUsers, createUser, getUser, updateUser, deleteUser } from '../repositories/user.repo';
+import { createUser, getUser, updateUser, deleteUser } from '../repositories/user.repo';
 import { User } from '../entities/user.entity';
+import { getAgeAggregation, getUsers } from '../elasticsearch/user.es';
 
 class UserController {
     public getAll(req: Request, res: Response): void{
@@ -8,6 +9,12 @@ class UserController {
             return res.status(200).json(result);
         });
     }
+
+    public getAgeAggregation(req: Request, res: Response): void{
+        getAgeAggregation().then((result: any) => {
+             return res.status(200).json(result);
+         });
+     }
 
     public createOne(req: Request, res: Response): void {
         const data: User = req.body;

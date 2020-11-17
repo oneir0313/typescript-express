@@ -1,6 +1,13 @@
 import app from './app';
-const PORT = 3000;
+// import config from './config/dbConfig';
+// import { createConnection } from 'typeorm';
 
-app.listen(PORT, () => {
-    console.log('Express server listening on Port ', PORT);
-});
+async function boostrap() {
+    const PORT = process.env.EXPOSE_PORT || 3000;
+    // await createConnection(config);
+    app.listen(PORT, () => {
+        console.log('Express server listening on Port ', PORT);
+    });
+};
+
+boostrap();

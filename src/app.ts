@@ -3,7 +3,6 @@ import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import router from './router';
 import { createConnection } from 'typeorm';
-import config from './config/dbConfig';
 import * as path from 'path';
 
 class App {
@@ -13,7 +12,6 @@ class App {
         this.app = express();
         this.config();
         this.routerSetup();
-        this.mysqlSetup();
         this.views();
     }
 
@@ -31,14 +29,6 @@ class App {
         for (const route of router) {
             this.app.use(route.getPrefix(), route.getRouter());
         }
-    }
-
-    private mysqlSetup() {
-        createConnection(config)
-            .then(connection => {
-                console.log('Has connected to DB? ', connection.isConnected);
-            })
-            .catch(error => console.log('TypeORM connection error: ', error));
     }
 }
 
