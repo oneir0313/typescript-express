@@ -2,7 +2,6 @@ import 'reflect-metadata';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import router from './router';
-import { createConnection } from 'typeorm';
 import * as path from 'path';
 
 class App {
